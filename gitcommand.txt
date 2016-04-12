@@ -1,0 +1,78 @@
+Clone repo
+git clone https://github.com/commonsearch/cosr-front.git
+
+===========================================================
+steps to update forked branch if there are new changes in remote master branch
+
+git fetch origin
+git reset --hard origin/master
+
+$ git remote add upstream https://github.com/commonsearch/cosr-front.git
+$ git fetch upstream
+
+# then: (like "git pull" which is fetch + merge)
+$ git merge upstream/master master
+
+# or, better, replay your local work on top of the fetched branch
+# like a "git pull --rebase"
+$ git rebase upstream/master
+
+#Update: If you've rebased your branch onto upstream/master you may need to force the push in order to push it to your own forked repository on GitHub. You'd do that with:
+$ git push -f origin master
+
+#You only need to use the -f the first time after you've rebased.
+================================================================
+
+steps to commit into git file
+
+# gives status 
+$ git status
+
+# add files which we want to commite 
+$ git add Readme.txt
+
+# “commit” it:
+$ git commit -m “Add Readme.txt”
+
+# change text msg
+$ git commit --amend
+
+# connect to repo
+$git remote add origin https://github.com/JBaba/cosr-front.git
+
+# confirm
+$ git remote -v
+
+# push
+$ git push
+$ git push origin master
+
+# pull
+$ git pull
+
+===============================================================
+
+Init repo inside https://github.com/JBaba/GoWork.git
+
+# Initalize the local directory as a Git repository
+$ git init
+
+# Add the files to your new local directory repo this stages for the first commit
+$ git add .
+
+# Commit the files that you have staged in your local repo
+$ git commit -m "First commit"
+
+# In the command prompt add the url for the remote repo where your local repo will be pushed
+$ git remote add origin "https://github.com/JBaba/GoWork.git"
+# sets the new romote
+
+$ git remote -v
+# verifies the new remote URL
+
+# push the changes in your local repo to Github
+$ git push origin master
+
+
+
+

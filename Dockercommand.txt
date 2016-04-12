@@ -1,0 +1,12 @@
+Docker list of container running in server
+docker ps
+========================
+
+Let's start it:
+make start_services_devindex
+(To stop it later, run make stop_services)
+================================================
+
+The next step is to start the Frontend server itself. Just run:
+make docker_devserver
+====================================

@@ -1,0 +1,16 @@
+Login to root
+You will need to do:
+sudo passwd root
+
+Then go ahead to set password. Use the root user using
+su root
+==========================================================
+
+delete folder command :
+rm -rf lampp
+===================================
+run sublime in root
+
+sudo -H subl
+sudo -i subl
+===================================
