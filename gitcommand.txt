@@ -73,6 +73,11 @@ $ git remote -v
 # push the changes in your local repo to Github
 $ git push origin master
 
+============================================================
 
+Merge files to head
+
+git fetch --all
+git reset --hard origin/master
 
 
