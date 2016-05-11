@@ -1,4 +1,4 @@
-Clone repo
+﻿Clone repo
 git clone https://github.com/commonsearch/cosr-front.git
 
 ===========================================================
@@ -53,6 +53,11 @@ $ git pull
 ===============================================================
 
 Init repo inside https://github.com/JBaba/GoWork.git
+
+#If we have'nt done the initial setup of binding the username and email add the below steps to configuration:-
+$ git config --global user.name "abc"
+
+$ git config --global user.email "abc@gmail.com"
 
 # Initalize the local directory as a Git repository
 $ git init
