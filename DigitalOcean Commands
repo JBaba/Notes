@@ -1,0 +1,9 @@
+DigitalOcean Commands
+
+=================================
+
+#Tomcat start command
+sudo initctl start tomcat
+
+#Tomcat restart command
+sudo initctl restart tomcat

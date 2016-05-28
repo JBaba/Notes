@@ -14,3 +14,12 @@ run sublime in root
 sudo -H subl
 sudo -i subl
 ===================================
+
+Network problem
+
+sudo service network-manager stop
+sudo service network-manager start
+
+===================================
+
+ssh root@104.236.239.13
