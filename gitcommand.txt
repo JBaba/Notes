@@ -82,7 +82,23 @@ $ git push origin master
 
 Merge files to head
 
-git fetch --all
-git reset --hard origin/master
+$ git fetch --all
+$ git reset --hard origin/master
+
+============================================================
+
+Pull and Push together
+
+# first add that file
+$ git add fileName
+
+# then commit that file with msg
+$ git commit -m 'Change'
+
+# git pull to merge with master
+$ git pull
+
+# send commit to master
+$ git push origin master
 
 
