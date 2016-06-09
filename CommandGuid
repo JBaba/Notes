@@ -3,23 +3,27 @@ You will need to do:
 sudo passwd root
 
 Then go ahead to set password. Use the root user using
-su root
+$ su root
 ==========================================================
 
 delete folder command :
-rm -rf lampp
+$ rm -rf lampp
 ===================================
 run sublime in root
 
-sudo -H subl
-sudo -i subl
+$ sudo -H subl
+$ sudo -i subl
 ===================================
 
 Network problem
 
-sudo service network-manager stop
-sudo service network-manager start
+$ sudo service network-manager stop
+$ sudo service network-manager start
 
 ===================================
 login to remote terminal
-ssh root@104.236.239.13
+$ ssh root@104.236.239.13
+
+===================================
+Change User Permissions 
+$ sudo chown -v -R <myusername> <FolderName/>
