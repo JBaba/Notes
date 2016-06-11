@@ -5,7 +5,6 @@ sudo passwd root
 Then go ahead to set password. Use the root user using
 $ su root
 ==========================================================
-
 delete folder command :
 $ rm -rf lampp
 ===================================
