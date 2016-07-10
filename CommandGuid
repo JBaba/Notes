@@ -19,7 +19,6 @@ $ sudo service network-manager start
 ===================================
 login to remote terminal
 $ ssh root@104.236.239.13
-
 ===================================
 Change User Permissions 
 $ sudo chown -v -R <myusername> <FolderName/>
