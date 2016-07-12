@@ -9,7 +9,6 @@ delete folder command :
 $ rm -rf lampp
 ===================================
 run sublime in root
-
 $ sudo -H subl
 $ sudo -i subl
 ===================================
