@@ -34,6 +34,9 @@ $ git add Readme.txt
 # “commit” it:
 $ git commit -m “Add Readme.txt”
 
+# "commit in past"
+$ git commit --date=2.days.ago -m "set in the past"
+
 # change text msg
 $ git commit --amend
 
@@ -82,7 +85,23 @@ $ git push origin master
 
 Merge files to head
 
-git fetch --all
-git reset --hard origin/master
+$ git fetch --all
+$ git reset --hard origin/master
+
+============================================================
+
+Pull and Push together
+
+# first add that file
+$ git add fileName
+
+# then commit that file with msg
+$ git commit -m 'Change'
+
+# git pull to merge with master
+$ git pull
+
+# send commit to master
+$ git push origin master
 
 
