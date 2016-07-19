@@ -17,15 +17,12 @@ $ sudo service network-manager stop
 $ sudo service network-manager start
 ===================================
 login to remote terminal
-<<<<<<< HEAD
 ssh root@104.236.239.13
 
 =================================
 #Change user group permission
 $ chown -R jbaba:jbaba .classpath 
-=======
-$ ssh root@104.236.239.13
+
 ===================================
 Change User Permissions 
 $ sudo chown -v -R <myusername> <FolderName/>
->>>>>>> 674d0a3a3ee58da524c8066d77faf1203632147e
