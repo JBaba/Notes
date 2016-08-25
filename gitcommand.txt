@@ -34,6 +34,9 @@ $ git add Readme.txt
 # “commit” it:
 $ git commit -m “Add Readme.txt”
 
+# "commit in past"
+$ git commit --date=2.days.ago -m "set in the past"
+
 # change text msg
 $ git commit --amend
 
