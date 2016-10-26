@@ -26,3 +26,12 @@ $ chown -R jbaba:jbaba .classpath
 ===================================
 Change User Permissions 
 $ sudo chown -v -R <myusername> <FolderName/>
+
+====================================
+get process id 
+$ jps -lv
+
+get stacktrace
+$jstack -l process_id > jstack.out
+
+$ sudo kill processid
