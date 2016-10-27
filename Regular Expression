@@ -29,7 +29,12 @@ Range in Regular Expression
   -> find increment operator in files
   -> valid match d++, count++
                  ---      ---
-                 
+
+Range with | (or) operator
+--------------------------
+([d|i][+][+])
+  -> find d or i before ++
+
 . operator in regax
 -------------------
 . is used to match any character
