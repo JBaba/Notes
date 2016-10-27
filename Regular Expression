@@ -35,6 +35,12 @@ Range with | (or) operator
 ([d|i][+][+])
   -> find d or i before ++
 
+(\s\w[+][+])
+  -> find all ++ variables with one latter word
+  
+(\s\w+[+][+])
+  -> find all ++ variables with name
+  
 . operator in regax
 -------------------
 . is used to match any character
