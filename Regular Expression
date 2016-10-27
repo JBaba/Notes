@@ -63,7 +63,10 @@ Regular Expression	Description
 \S+                 Several non-whitespace characters
 \b                  Matches a word boundary where a word character is [a-zA-Z0-9_]
 
-
+Plus (+) operator
+-----------------
+Plus can be used for one or more charater in range.
+\d+ is 1 or more digits
 
 
 
