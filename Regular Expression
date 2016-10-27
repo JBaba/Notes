@@ -98,4 +98,30 @@ Regular Expression   Description	                                  Examples
                      match. This makes the regular expression 
                      stop at the first match.
 
+Example:
+--------
+123-234-2345
+(\d\d\d[-]\d\d\d[-]\d\d\d\d)
+  -> used to find above phone number pattern
 
+1232342345
+(\d\d\d-*\d\d\d-*\d\d\d\d)
+  -> 0 or 1 "-" present in digits
+  
+123 234 2345
+(\d\d\d\s*\d\d\d\s*\d\d\d\d)  ==  (\d\d\d\s+*\d\d\d\s+*\d\d\d\d)
+  -> 0 or 1 space present in digits
+  -> 2nd is 0 or more space present in digits
+  
+123 234-2345
+(\d\d\d-*\s*\d\d\d-*\s*\d\d\d\d)
+  -> combine - and \s to make pattern
+
+(123) 234-2345
+(\(*\d\d\d\)*-*\s*\d\d\d-*\s*\d\d\d\d)
+  -> can be used find all types of phone number pattern
+
+
+
+(\(*\d\d\d\)*-*\s*\d\d\d-*\s*\d\d\d\d)
+  -> finds phone number
