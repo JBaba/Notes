@@ -121,7 +121,5 @@ Example:
 (\(*\d\d\d\)*-*\s*\d\d\d-*\s*\d\d\d\d)
   -> can be used find all types of phone number pattern
 
-
-
 (\(*\d\d\d\)*-*\s*\d\d\d-*\s*\d\d\d\d)
   -> finds phone number
