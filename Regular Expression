@@ -48,7 +48,20 @@ we can use renge to find dates in files
   -> this pattern find 2 digits followed by anychar followed by 2 digits by anychar followed by 4 digits
   -> valid match is any dates
   
+  
+Meta characters
+---------------
 
+Regular Expression	Description
+-----------------------------------------------------------------------------------
+\d                  Any digit, short for [0-9]
+\D                  A non-digit, short for [^0-9]
+\s                  A whitespace character, short for [ \t\n\x0b\r\f]
+\S                  A non-whitespace character, short for
+\w                  A word character, short for [a-zA-Z_0-9]
+\W                  A non-word character [^\w]
+\S+                 Several non-whitespace characters
+\b                  Matches a word boundary where a word character is [a-zA-Z0-9_]
 
 
 
