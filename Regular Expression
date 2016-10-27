@@ -12,6 +12,7 @@ name?  : finds all the charecter at the end of the file
 Range in Regular Expression
 ---------------------------
 [a-z] , [A-Z] , [0-9] , or can combine all of them [a-zA-z0-9]
+^ in renge works as not this char rest of them [^a-z] , [^A-Z] , [^0-9] , or can combine all of them [^a-zA-z0-9]
 
 ^nam[a-z]?
   -> Find word at begging of the line with "nam" and last latter can be anything from a to z
@@ -20,6 +21,9 @@ Range in Regular Expression
 ^nam[eE]?
   -> Find word at begging of the line with "namE" or "name"
   -> last char can be in upper case or lower case
+
+^nam[^e]
+  -> find word nam where last char can be anything other then e
   
 . operator in regax
 -------------------
