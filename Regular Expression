@@ -74,5 +74,28 @@ Plus (+) operator
 Plus can be used for one or more charater in range.
 \d+ is 1 or more digits
 
+Quantifier
+----------
+
+Regular Expression   Description	                                  Examples
+-----------------------------------------------------------------------------------------------------------------------
+*                    Occurs zero or more times,is short for {0,}    X* finds no or several letter X, <sbr /> .* finds any 
+                                                                    character sequence
+
++                    Occurs one or more times, is short for {1,}    X+- Finds one or several letter X
+
+?                    Occurs no or one times, ? is short for         X? finds no or exactly one letter X
+                     {0,1} 
+
+{X}                  Occurs X number of times, {} describes         \d{3} searches for three digits, .{10} for any 
+                     the order of the preceding liberal             character sequence of length 10.
+
+{X,Y}                Occurs between X and Y times,                  \d{1,4} means \d must occur at least once and at a 
+                                                                    maximum of four.
+
+*?                   ? after a quantifier makes it a reluctant 
+                     quantifier. It tries to find the smallest 
+                     match. This makes the regular expression 
+                     stop at the first match.
 
 
