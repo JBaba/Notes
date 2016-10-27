@@ -1,0 +1,4 @@
+^  : used for begning of file
+?  : used for end of file
+
+(....) : use brecket for normal regex
