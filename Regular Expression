@@ -123,3 +123,9 @@ Example:
 
 (\(*\d\d\d\)*-*\s*\d\d\d-*\s*\d\d\d\d)
   -> finds phone number
+  
+(\(?\d\d\d\)?-?\s*\d\d\d-?\s*\d\d\d\d)
+  -> if only one ( ) and - is present in phone number combinations
+  
+(\(?\d{3}\)?-?\s*\d{3}-?\s*\d{4})
+  -> use {3} for number digits
