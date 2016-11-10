@@ -104,4 +104,19 @@ $ git pull
 # send commit to master
 $ git push origin master
 
+===============================================================
+
+Commit into old branch
+
+$ git clone "letest branch"
+
+# create new branch for bug fix
+$ git branch "bug fix 1"
+
+# change branch to older branch version
+$git checkout My1028 
+
+$ git add .
+$ git commite -m "bug fix"
+$ git push
 
