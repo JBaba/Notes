@@ -114,7 +114,7 @@ $ git clone "letest branch"
 $ git branch "bug fix 1"
 
 # change branch to older branch version
-$git checkout My1028 
+$ git checkout My1028 
 
 $ git add .
 $ git commite -m "bug fix"
