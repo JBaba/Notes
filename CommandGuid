@@ -1,3 +1,21 @@
+Ubuntu 16.06 login loop error :
+
+In my case original nvidia drivers was the cause and switching back to open source nouveau helped. First, I removed all stuff from nvidia:
+
+1. sudo apt-get remove --purge 'nvidia-*'
+2. sudo apt-get install ubuntu-desktop
+3. sudo rm /etc/X11/xorg.conf
+4. echo 'nouveau' | sudo tee -a /etc/modules
+(source: How can I uninstall a nvidia driver completely ?)
+
+After that I could login, but unity didn't load, there was no launcher etc. It turn out I had to re-enable Unity plugin:
+
+5. sudo apt-get install compizconfig-settings-manager
+6. DISPLAY=:0 ccsm
+7. Find the Unity plugin and enable it.
+============================================================
+
+
 Login to root
 You will need to do:
 sudo passwd root
